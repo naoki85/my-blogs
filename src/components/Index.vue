@@ -7,6 +7,7 @@
       >
         <v-layout row wrap>
           <v-post-card v-for="post in posts"
+            :key="post.title"
             :title="post.title"
             :date="post.date"
             :to="post.to"
